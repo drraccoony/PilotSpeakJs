@@ -1,3 +1,4 @@
+console.log('Javascript Init!');
 const word1 = document.getElementById('word1');
 const word2 = document.getElementById('word2');
 const word3 = document.getElementById('word3');
@@ -11,6 +12,7 @@ var descriptor = Array('really nuts','over-credited','not in-line with our missi
 generate_phrase();
 
 function generate_phrase() {
+    console.log('♻️ Generating phrase from array pool...');
     setword1 = buzzword1[Math.floor(Math.random() * buzzword1.length)];
     setword2 = location_noun1[Math.floor(Math.random() * location_noun1.length)];
     setword3 = time[Math.floor(Math.random() * time.length)];
@@ -19,11 +21,9 @@ function generate_phrase() {
 }
 
 function render_phrase() {
+    console.log('🖨️ Rendering Phrase to DOM...');
     word1.textContent = setword1;
     word2.textContent = setword2;
     word3.textContent = setword3;
     word4.textContent = setword4; 
 }
-
-// console.log('yes is ' + word1);
-
