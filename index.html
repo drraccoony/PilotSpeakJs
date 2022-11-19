@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0528c2bae4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto&display=swap" rel="stylesheet">
+    <link href="./src/css/style.css" rel="stylesheet">
+    <title>Pilot Speak Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4">Pilot Speak v3</h1>
+        <h4 class="fancyfont">What is "Pilot Speak Generator"?</h4>
+        <p class="fancyfont">Have you ever found yourself with a group of pilots and wanted something to contribute to the conversation? Well now you can! This interactive tool will allow you to easily generate (potentially) relevant topics to spark discussion!</p>
+        <p class="fancyfont">Some functionality like copying to clipboard and sharing functions, are still a work in progress.</p>
+        </div>
+    
+        <div class="container">
+          <div class="card">
+            <div class="card-body lol1" style="text-align: center; font-size: 150%;">
+                <p class="fonty">The 
+                    <span class="badge badge-primary" style="background-color: red; transform: rotate(2deg); box-shadow: 2px 1px 5px grey;" id="word1">FUK1</span> on 
+                    <span class="badge badge-secondary" style="background-color: teal; transform: rotate(-1deg);box-shadow: 2px 1px 5px grey;" id="word2">FUK2</span>
+                    <span class="badge badge-success" style="background-color: green; transform: rotate(1deg);box-shadow: 2px 1px 5px grey;" id="word3">FUK3</span>
+                    was <span class="badge badge-warning" style="background-color: gray; transform: rotate(1deg);box-shadow: 2px 1px 5px grey;" id="word4">FUK4</span></p>
+             </div>
+             <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary disabled" title="Coming soon" onclick="copyText()" id="peep"><i class="fas fa-copy"></i> Copy</button>
+              <!-- <button type="button" class="btn btn-light disabled" title="Coming soon" onclick="window.location.href = 'https://twitter.com/intent/tweet?text=<?php echo $lineurl; ?>';"><i class="fab fa-twitter"></i> Share on Twitter</button>
+              <button type="button" class="btn btn-light disabled" title="Coming soon" onclick="window.location.href = 'https://telegram.me/share/url?text=<?php echo $lineurl; ?>';"><i class="fab fa-telegram-plane"></i> Share on Telegram</button> -->
+              <button type="button" class="btn btn-success" onclick="window.location.href = '.';"><i class="fas fa-dice"></i> Re-roll!</button>
+            </div>
+           </div>
+           
+          <p><small>Application made in love by <a href="http://t.me/drraccoon/">@DrRaccoon</a> for <a href="http://t.me/vulan/">@Vulan</a> and all my other aviation friends. Like what I make? <a href="https://ko-fi.com/drraccoon"><i class="fas fa-mug-hot" style="margin-right: 4px"></i>Buy me a coffee</a>!<br>
+            </small></p>
+            <center><p>Previously adapted from PHP to <i class="fab fa-js"></i></center></p>
+         </div>
+        
+        
+    <script src="./src/js/javascript.js" />
+
+</body>
+</html>
