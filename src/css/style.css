@@ -7,11 +7,24 @@
     -ms-animation: fadein 2s; /* Internet Explorer */
      -o-animation: fadein 2s; /* Opera < 12.1 */
         animation: fadein 2s;
-  
   }
   .fonty{
     font-family: 'Comfortaa', cursive;
   }
+
+  .derp1 {
+    background-color: red; transform: rotate(2deg); box-shadow: 2px 1px 5px grey;
+  }
+  .derp2 {
+    background-color: teal; transform: rotate(-1deg); box-shadow: 2px 1px 5px grey;
+  }
+  .derp3 {
+    background-color: green; transform: rotate(1deg); box-shadow: 2px 1px 5px grey;
+  }
+  .derp4 {
+    background-color: gray; transform: rotate(1deg); box-shadow: 2px 1px 5px grey;
+  }
+
   @keyframes slideInFromLeft {
   0% {
     transform: translateX(-10%);
