@@ -61,3 +61,55 @@
     from { opacity: 0; }
     to   { opacity: 1; }
   }
+  /* Muted footer */
+  .site-footer {
+    margin-top: 3rem;
+    padding: 1.25rem 0 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    color: #8a8f98;
+  }
+  .site-footer p {
+    margin-bottom: 0.35rem;
+  }
+  .site-footer a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+    transition: color 0.15s ease;
+  }
+  .site-footer a:hover,
+  .site-footer a:focus {
+    color: #495057;
+  }
+  .site-footer i {
+    margin: 0 2px;
+    opacity: 0.8;
+  }
+
+  /* Clickable word badges */
+  .word-btn {
+    border: none;
+    font: inherit;
+    font-size: 0.75em;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: filter 0.15s ease, scale 0.15s ease;
+  }
+  .word-btn:hover {
+    filter: brightness(1.12);
+    scale: 1.05;
+  }
+  .word-btn:focus-visible {
+    outline: 3px solid #0d6efd;
+    outline-offset: 2px;
+  }
+  .reroll-hint {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.55em;
+    color: #8a8f98;
+  }
