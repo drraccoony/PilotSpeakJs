@@ -113,3 +113,49 @@
     font-size: 0.55em;
     color: #8a8f98;
   }
+
+  /* Layout & mobile fit */
+  body {
+    padding-top: 1.5rem;
+  }
+  .phrase-body {
+    text-align: center;
+    font-size: 150%;
+  }
+  .phrase-body .fonty {
+    line-height: 1.9;
+    text-wrap: balance;
+  }
+  .word-btn {
+    /* Let long phrases wrap inside the badge instead of running off-screen */
+    white-space: normal;
+    max-width: 100%;
+    line-height: 1.25;
+    padding: 0.4em 0.6em;
+    vertical-align: middle;
+  }
+  .phrase-actions .btn {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  @media (max-width: 576px) {
+    body {
+      padding-top: 1rem;
+    }
+    .site-title {
+      font-size: 2.25rem;
+    }
+    .phrase-body {
+      font-size: 120%;
+      padding: 1.25rem 0.75rem;
+    }
+    .phrase-actions .btn {
+      font-size: 0.95rem;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+    }
+    /* Smaller tilt so wrapped badges don't poke out of the card */
+    .derp1, .derp3 { transform: rotate(0.75deg); }
+    .derp2, .derp4 { transform: rotate(-0.5deg); }
+  }

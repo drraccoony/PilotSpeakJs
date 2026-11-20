@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="display-4">Pilot Speak v3</h1>
+        <h1 class="display-4 site-title">Pilot Speak v3</h1>
         <h4 class="fancyfont">What is "Pilot Speak Generator"?</h4>
         <p class="fancyfont">Have you ever found yourself with a group of pilots and wanted something to contribute to the conversation? Well now you can! This interactive tool will allow you to easily generate (potentially) relevant topics to spark discussion!</p>
         <p class="fancyfont">Some functionality like sharing functions, are still a work in progress.</p>
@@ -36,7 +36,7 @@
     
         <div class="container">
           <div class="card">
-            <div class="card-body lol1" style="text-align: center; font-size: 150%;">
+            <div class="card-body lol1 phrase-body">
                 <p class="fonty" aria-live="polite">The 
                     <button type="button" onclick="rerollSingleWord('one')" class="badge word-btn derp1" id="word1" title="Re-roll this word">⁉️</button> on 
                     <button type="button" onclick="rerollSingleWord('two')" class="badge word-btn derp2" id="word2" title="Re-roll this word">⁉️</button>
@@ -44,7 +44,7 @@
                     <button type="button" onclick="rerollSingleWord('four')" class="badge word-btn derp4" id="word4" title="Re-roll this word">⁉️</button></p>
                 <p class="reroll-hint"><i class="fas fa-hand-pointer"></i> Tap any word to re-roll just that one</p>
              </div>
-             <div class="btn-group" role="group" aria-label="Phrase actions">
+             <div class="btn-group phrase-actions" role="group" aria-label="Phrase actions">
               <button type="button" class="btn btn-primary" onclick="copyText()" id="copybtn"><i class="fas fa-copy"></i> Copy</button>
               <button type="button" class="btn btn-secondary" onclick="sharePhrase()" id="sharebtn"><i class="fas fa-share-nodes"></i> Share</button>
               <button type="button" class="btn btn-success" onclick="generate_phrase()"><i class="fas fa-dice"></i> Re-roll!</button>
